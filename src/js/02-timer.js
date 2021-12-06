@@ -58,7 +58,6 @@ function addLeadingZero(value) {
     return (value.toString().padStart(2, '0'));
 }
 
-
 function timeTimer(){
     btnStart.disabled = true;
     timerId = setInterval(() => {
@@ -76,8 +75,6 @@ function timeTimer(){
         countMinutes.textContent = addLeadingZero(count.minutes);
         countSeconds.textContent = addLeadingZero(count.seconds);
     }, 1000);
-    
-
 };
 
 btnStart.addEventListener("click", timeTimer);
