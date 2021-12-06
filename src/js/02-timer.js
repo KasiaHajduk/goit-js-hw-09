@@ -1,3 +1,5 @@
+import Notiflix from 'notiflix';
+
 import flatpickr from "flatpickr";
 import 'flatpickr/dist/flatpickr.min.css';
 
@@ -24,7 +26,7 @@ const options = {
         nowDate = calendar.now;
              
         if (countDate < nowDate) {
-            window.alert("Please choose a date in the future");
+            Notiflix.Notify.failure('Please choose a date in the future');
             btnStart.disabled = true;
         }
         else {
@@ -34,8 +36,6 @@ const options = {
 };
 
 let calendar = flatpickr("#datetime-picker", options);
-console.log('nowww' + calendar.now);
-
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
