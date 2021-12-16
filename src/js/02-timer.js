@@ -90,13 +90,13 @@ btnStart.style.padding = '4px';
 
 const timer = document.querySelector('.timer');
 timer.style.marginTop = '30px';
-timer.style.display = 'flex';
-timer.style.flexDirection = 'flex';
+//timer.style.display = 'flex';
+//timer.style.flexDirection = 'flex';
 
 const timerClocks = document.querySelectorAll('.field');
 for (const timerClock of timerClocks) {
-  timerClock.style.display = 'flex';
-  timerClock.style.flexDirection = 'column';
+  //timerClock.style.display = 'flex';
+  //timerClock.style.flexDirection = 'column';
   timerClock.style.alignItems = 'center';
   timerClock.style.marginLeft = '30px';
   timerClock.style.textTransform = 'uppercase';
